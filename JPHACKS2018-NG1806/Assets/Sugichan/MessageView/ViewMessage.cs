@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ViewMessage : MonoBehaviour {
 
-    NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject>("Message");
+    NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject>("Messages");
     string m;
     public Text text;
 	// Use this for initialization
@@ -17,7 +17,7 @@ public class ViewMessage : MonoBehaviour {
         {
             foreach(NCMBObject message in objectlist)
             {
-                m += message["Message"] + "\n";
+                m += message["Messages"] + "\n";
             }
             text.text = m;
         }

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Cheerup : MonoBehaviour {
 
 
-        NCMBObject message = new NCMBObject("Message");
+        NCMBObject message = new NCMBObject("Messages");
 	// Use this for initialization
 	void Start () {
 
@@ -24,7 +24,7 @@ public class Cheerup : MonoBehaviour {
     public void cheering()
     {
         var mes = InputField.text;
-        message["Message"] = InputField.text;
+        message["Messages"] = InputField.text;
         message["Byname"] = Temp.sendname;
         message["Number"] = Temp.sendnumber;
         message.SaveAsync();

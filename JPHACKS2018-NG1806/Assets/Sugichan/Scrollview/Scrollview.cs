@@ -44,18 +44,15 @@ public class Scrollview : MonoBehaviour {
 
                    // button.GetComponent<Info>().sendname =(string)obj["Name"];
                     Temp.look_obj = info.obj = (string)obj["Obj1"];
-                    Temp.objnum = info.objnum = 1;
-                    Temp.forfor = info.forfor = (long)obj["For1"];
+                    Temp.nowobjnum = info.objnum = 1;
+                    Temp.look_forfor = info.forfor = (long)obj["For1"];
                     
                     
-                    Temp.suc = info.suc =  (long)obj["Suc1"];
-                    Temp.fall = info.fall = (long)obj["Fall1"];
+                    Temp.look_suc = info.suc =  (long)obj["Suc1"];
+                    Temp.look_fall = info.fall = (long)obj["Fall1"];
 
-                    Temp.S_desu = false;
 
-                    SceneManager.LoadScene("Self_main");
-                    SceneManager.LoadScene("Other");
-                    SceneManager.UnloadSceneAsync("ScroolView");
+
                 }
 
             }

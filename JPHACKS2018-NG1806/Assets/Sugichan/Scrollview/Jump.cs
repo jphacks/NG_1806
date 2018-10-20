@@ -17,9 +17,9 @@ public class Jump : MonoBehaviour {
 
     public void Click()
     {
+        Temp.S_desu = false;
         SceneManager.LoadScene("Other", LoadSceneMode.Additive);
         SceneManager.LoadScene("Self_main", LoadSceneMode.Additive);
-        
         var info = GetComponent<Info>();
         Temp.look_name = info.sendname;
         Temp.sendname = info.sendname;

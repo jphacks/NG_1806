@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NCMB;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
 public class objinput : MonoBehaviour {
 
@@ -22,7 +23,7 @@ public class objinput : MonoBehaviour {
     public Text notinput;
     public void OK()
     {
-        if (inp.text.Length ==0 || bytime.text.Length == 0)
+        if (inp.text.Length ==0 || Regex.Replace(bytime.text, @"[^0-9]", "")=="")
         {
             notinput.enabled = true;
         }

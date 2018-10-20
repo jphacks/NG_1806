@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Starting : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	public void S () {
         NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject>("Cheer");
         query.WhereEqualTo("Name", PlayerPrefs.GetString("Name"));
         query.FindAsync((List<NCMBObject> objectlist, NCMBException e) =>
@@ -33,6 +33,8 @@ public class Starting : MonoBehaviour {
                 Account.forfor1 = (long)objectlist[0]["For1"];
                 Account.forfor2 = (long)objectlist[0]["For2"];
                 Account.forfor3 = (long)objectlist[0]["For3"];
+                SceneManager.LoadScene("Self_main",LoadSceneMode.Additive);
+                SceneManager.UnloadSceneAsync("Start");
 
 
 
