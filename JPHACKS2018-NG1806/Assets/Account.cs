@@ -17,5 +17,8 @@ public class Account : MonoBehaviour {
     public static long fall1;
     public static long fall2;
     public static long fall3;
+    public static long water1;
+    public static long water2;
+    public static long water3;
 
 }

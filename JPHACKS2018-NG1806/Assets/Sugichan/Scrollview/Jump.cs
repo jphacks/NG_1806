@@ -28,6 +28,7 @@ public class Jump : MonoBehaviour {
         Temp.look_suc = info.suc;
         Temp.look_fall = info.fall;
         Temp.look_forfor = info.forfor;
+        Temp.look_water = info.water;
         SceneManager.UnloadSceneAsync("ScrollView");
 
     }

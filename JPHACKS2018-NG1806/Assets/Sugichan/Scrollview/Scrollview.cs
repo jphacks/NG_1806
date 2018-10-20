@@ -42,14 +42,17 @@ public class Scrollview : MonoBehaviour {
                     var info = button.GetComponent<Info>();
                     info.sendname = (string)obj["Name"];
 
+
                    // button.GetComponent<Info>().sendname =(string)obj["Name"];
-                    Temp.look_obj = info.obj = (string)obj["Obj1"];
-                    Temp.nowobjnum = info.objnum = 1;
-                    Temp.look_forfor = info.forfor = (long)obj["For1"];
+                     info.obj = (string)obj["Obj1"];
+                     info.objnum = 1;
+                     info.forfor = (long)obj["For1"];
                     
                     
-                    Temp.look_suc = info.suc =  (long)obj["Suc1"];
-                    Temp.look_fall = info.fall = (long)obj["Fall1"];
+                     info.suc =  (long)obj["Suc1"];
+                     info.fall = (long)obj["Fall1"];
+                    info.water = (long)obj["Water"];
+                    
 
 
 

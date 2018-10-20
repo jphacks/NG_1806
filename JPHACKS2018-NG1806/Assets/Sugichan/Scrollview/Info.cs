@@ -10,5 +10,6 @@ public class Info : MonoBehaviour {
     public long suc;
     public long fall;
     public long forfor;
+    public long water;
 
 }

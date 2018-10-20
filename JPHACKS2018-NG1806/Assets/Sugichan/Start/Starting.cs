@@ -33,6 +33,9 @@ public class Starting : MonoBehaviour {
                 Account.forfor1 = (long)objectlist[0]["For1"];
                 Account.forfor2 = (long)objectlist[0]["For2"];
                 Account.forfor3 = (long)objectlist[0]["For3"];
+                Account.water1 = (long)objectlist[0]["Water1"];
+                Account.water2 = (long)objectlist[0]["Water2"];
+                Account.water3 = (long)objectlist[0]["Water3"];
                 SceneManager.LoadScene("Self_main",LoadSceneMode.Additive);
                 SceneManager.UnloadSceneAsync("Start");
 
