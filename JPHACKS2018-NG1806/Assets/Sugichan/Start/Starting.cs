@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NCMB;
+using UnityEngine.SceneManagement;
 
 
 public class Starting : MonoBehaviour {
@@ -14,7 +15,8 @@ public class Starting : MonoBehaviour {
         {
             if (objectlist.Count == 0)
             {
-
+                SceneManager.LoadScene("Name", LoadSceneMode.Additive);
+                SceneManager.UnloadSceneAsync("Start");
             }
             else
             {

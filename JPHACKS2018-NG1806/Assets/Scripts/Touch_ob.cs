@@ -33,16 +33,38 @@ public class Touch_ob : MonoBehaviour {
                             {
                                 Debug.Log("pushed" + num.ToString());
                                 ob.Change(num);
-                                /*if(){
-                                 * Debug.Log("goto Objinput");
-                                   SceneManager.LoadScene("Objinput", LoadSceneMode.Additive);
-                                SceneManager.UnloadSceneAsync("Self_main");
-                                SceneManager.UnloadSceneAsync("Self");
-                                 Temp.nowobjnum = num;
-                                 }
+                                if (Now_obj.number == 1)
+                                {if(Account.obj1 == "")
+                                    {
+                                        Debug.Log("goto Objinput");
+                                        SceneManager.LoadScene("Objinput", LoadSceneMode.Additive);
+                                        SceneManager.UnloadSceneAsync("Self_main");
+                                        SceneManager.UnloadSceneAsync("Self");
+                                        Temp.nowobjnum = num;
+                                    }
+                                }else if(Now_obj.number == 2)
+                                {
+                                    if(Account.obj2 == "")
+                                    {
+                                        Debug.Log("goto Objinput");
+                                        SceneManager.LoadScene("Objinput", LoadSceneMode.Additive);
+                                        SceneManager.UnloadSceneAsync("Self_main");
+                                        SceneManager.UnloadSceneAsync("Self");
+                                        Temp.nowobjnum = num;
+                                    }
+                                }else if(Now_obj.number == 3)
+                                {if(Account.obj3 == "")
+                                    {
+                                        Debug.Log("goto Objinput");
+                                        SceneManager.LoadScene("Objinput", LoadSceneMode.Additive);
+                                        SceneManager.UnloadSceneAsync("Self_main");
+                                        SceneManager.UnloadSceneAsync("Self");
+                                        Temp.nowobjnum = num;
+                                    }
+                                }
 
 
-                             */
+                             
                             }
                         }
                     }

@@ -26,7 +26,7 @@ public class GoOther : MonoBehaviour {
                         //Rayを飛ばしてあたったオブジェクトが自分自身だったら
                         if (hit.collider.gameObject == this.gameObject)
                         {
-                            SceneManager.LoadScene("ScrollView");
+                            SceneManager.LoadScene("ScrollView",LoadSceneMode.Additive);
                             SceneManager.UnloadSceneAsync("Self");
                             SceneManager.UnloadSceneAsync("Self_main");
 

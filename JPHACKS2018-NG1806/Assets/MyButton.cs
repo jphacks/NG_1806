@@ -8,8 +8,8 @@ public class MyButton : MonoBehaviour {
 	
     public void OnClick()
     {
-        SceneManager.LoadScene("Self_main");
-        SceneManager.LoadScene("Self");
+        SceneManager.LoadScene("Self_main",LoadSceneMode.Additive);
+        SceneManager.LoadScene("Self",LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("MessageView");
     }
 }
