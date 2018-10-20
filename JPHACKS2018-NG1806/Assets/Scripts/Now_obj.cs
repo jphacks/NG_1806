@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Now_obj : MonoBehaviour {
     public string now;
+    public static int number;
     public Touch_ob a;
     public Touch_ob b;
     public Touch_ob c;
@@ -12,11 +13,13 @@ public class Now_obj : MonoBehaviour {
     // Use this for initialization
     void Start () {
         now = "C1";
+        number = 1;
 	}
 
     public void Change(int n)
     {
         now = "C" + n.ToString();
+        number = n;
     }
 
 }
