@@ -6,7 +6,7 @@ using NCMB;
 public class Cheerup : MonoBehaviour {
 
 
-        NCMBObject cheer = new NCMBObject("Cheer");
+        NCMBObject message = new NCMBObject("Message");
 	// Use this for initialization
 	void Start () {
 
@@ -18,11 +18,15 @@ public class Cheerup : MonoBehaviour {
 	}
 
     public InputField InputField;
+    public GameObject completed;
     public void cheering()
     {
-        var message = InputField.text;
-        cheer["message"] = message;
-        cheer.SaveAsync();
+        var mes = InputField.text;
+        message["message"] = message;
+        message["byname"] = SendInfo.name;
+        message["number"] = SendInfo.number;
+        message.SaveAsync();
+        completed.SetActive(true);
 
     }
 }

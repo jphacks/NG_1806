@@ -23,12 +23,12 @@ public class NameOK : MonoBehaviour {
         query.WhereEqualTo("Name", Account.name);
         query.FindAsync((List<NCMBObject> objectList, NCMBException e) =>
         {
-            if (e == null)
+            if (objectList.Count==0)
             {
-        
-        cheer["Name"] = Account.name;
-        PlayerPrefs.SetString(Account.name, Account.name);
-        PlayerPrefs.Save();
+                cheer["Name"] = Account.name;
+                PlayerPrefs.SetString("Name", Account.name);
+                PlayerPrefs.Save();
+                cheer.SaveAsync();
 
             }
             else

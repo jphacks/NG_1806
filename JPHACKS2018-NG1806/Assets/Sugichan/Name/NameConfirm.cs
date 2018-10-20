@@ -12,6 +12,6 @@ public class NameConfirm : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-        GetComponent<Text>().text = "「"+PlayerPrefs.GetString("Name", "")+"」" + "でよろしいですか?";
+        GetComponent<Text>().text = "「"+Account.name+"」" + "でよろしいですか?";
 	}
 }

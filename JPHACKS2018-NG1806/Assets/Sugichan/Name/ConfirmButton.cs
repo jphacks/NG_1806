@@ -18,10 +18,7 @@ public class ConfirmButton : MonoBehaviour {
     public GameObject confirm;
     public void Confirm()
     {
-        PlayerPrefs.SetString("Name", inputField.GetComponent<InputField>().text);
-        PlayerPrefs.Save();
-        print(PlayerPrefs.GetString("Name", ""));
-        Account.name = PlayerPrefs.GetString("Name", "");
+        Account.name = inputField.text;
         confirm.SetActive(true);
     }
 }
