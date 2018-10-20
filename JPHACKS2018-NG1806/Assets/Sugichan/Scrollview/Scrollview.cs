@@ -25,6 +25,8 @@ public class Scrollview : MonoBehaviour {
         query.OrderByAscending("Suc1");
         query.FindAsync((List<NCMBObject> objectlist, NCMBException e) =>
             {
+                
+
                 foreach(NCMBObject obj in objectlist)
                 {
                     var item = GameObject.Instantiate(prefab) as RectTransform;
