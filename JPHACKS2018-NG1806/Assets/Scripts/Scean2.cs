@@ -25,6 +25,7 @@ public class Scean2 : MonoBehaviour {
                         //Rayを飛ばしてあたったオブジェクトが自分自身だったら
                         if (hit.collider.gameObject == this.gameObject)
                         {
+                            Debug.Log("goto MessageView");
                             SceneManager.LoadScene("MessageView",LoadSceneMode.Additive);
                             SceneManager.UnloadSceneAsync("Self_main");
                             SceneManager.UnloadSceneAsync("Self");
