@@ -9,9 +9,14 @@ public class GetResult : MonoBehaviour {
     public Now_obj no;
 
     void Update () {
-
-        text.text = ((PlayerPrefs.GetInt(no.now + "fall") + PlayerPrefs.GetInt(no.now + "suc")).ToString() + "days / "
-            + PlayerPrefs.GetInt(no.now + "for").ToString() + "days");
+        if(Temp.S_desu == false)
+        {
+            text.text = (Temp.fall + Temp.suc).ToString() + "days / " + Temp.forfor.ToString() + "days";
+        }
+        else
+        {
+            //text.text = 
+        }
 	}
 	
 	

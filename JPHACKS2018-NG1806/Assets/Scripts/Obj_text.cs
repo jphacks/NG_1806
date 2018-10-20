@@ -7,7 +7,11 @@ public class Obj_text : MonoBehaviour {
     public Now_obj no;
     // Use this for initialization
     void Update () {
-        text.text = PlayerPrefs.GetString(no.now + "obj");
-
+        if (Temp.S_desu == true) { text.text = Temp.look_obj; }
+        else
+        {
+          //  text.text = 
+        }
+        
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using NCMB;
+using UnityEngine.SceneManagement;
 
 public class Scrollview : MonoBehaviour {
 
@@ -42,15 +43,19 @@ public class Scrollview : MonoBehaviour {
                     info.sendname = (string)obj["Name"];
 
                    // button.GetComponent<Info>().sendname =(string)obj["Name"];
-                    info.obj = (string)obj["Obj1"];
-                    info.objnum = 1;
-                    info.forfor = (long)obj["For1"];
+                    Temp.look_obj = info.obj = (string)obj["Obj1"];
+                    Temp.objnum = info.objnum = 1;
+                    Temp.forfor = info.forfor = (long)obj["For1"];
                     
                     
-                    info.suc =  (long)obj["Suc1"];
-                    info.fall = (long)obj["Fall1"];
+                    Temp.suc = info.suc =  (long)obj["Suc1"];
+                    Temp.fall = info.fall = (long)obj["Fall1"];
 
+                    Temp.S_desu = false;
 
+                    SceneManager.LoadScene("Self_main");
+                    SceneManager.LoadScene("Other");
+                    SceneManager.UnloadSceneAsync("ScroolView");
                 }
 
             }

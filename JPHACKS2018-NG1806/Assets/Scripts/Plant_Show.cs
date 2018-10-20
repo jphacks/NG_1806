@@ -13,7 +13,14 @@ public class Plant_Show : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        grow = PlayerPrefs.GetInt(num.now + "suc") + PlayerPrefs.GetInt(num.now + "fall") / PlayerPrefs.GetInt(num.now + "for");
+        if (Temp.S_desu == false)
+        {
+            grow = (Temp.suc + Temp.fall) / Temp.forfor;
+        }
+        else
+        {
+           // grow = 
+        }
         if (grow == 0)
         {
             Debug.Log("Now,0");
