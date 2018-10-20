@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Touch_ob : MonoBehaviour {
   
@@ -28,7 +29,17 @@ public class Touch_ob : MonoBehaviour {
                         //Rayを飛ばしてあたったオブジェクトが自分自身だったら
                         if (hit.collider.gameObject == this.gameObject)
                         {
+                            Temp.
                             ob.Change(num);
+                            /*if(){
+                               SceneManager.LoadScene("CheerUp", LoadSceneMode.Additive);
+                            SceneManager.UnloadSceneAsync("Self_main");
+                            SceneManager.UnloadSceneAsync("Self");
+                             
+                             }
+                         
+                         
+                         */
                         }
                     }
                 }

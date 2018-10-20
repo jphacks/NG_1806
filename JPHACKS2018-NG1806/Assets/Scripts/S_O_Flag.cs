@@ -9,7 +9,7 @@ public class S_O_Flag : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if ()
+        if (true)
         {
             obj1.SetActive(false);
             obj2.SetActive(false);
