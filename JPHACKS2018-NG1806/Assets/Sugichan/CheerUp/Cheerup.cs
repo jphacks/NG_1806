@@ -22,7 +22,7 @@ public class Cheerup : MonoBehaviour {
     public void cheering()
     {
         var mes = InputField.text;
-        message["message"] = message;
+        message["message"] = InputField.text;
         message["byname"] = SendInfo.name;
         message["number"] = SendInfo.number;
         message.SaveAsync();
