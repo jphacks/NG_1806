@@ -18,7 +18,7 @@ public class ConfirmButton : MonoBehaviour {
     public GameObject confirm;
     public void Confirm()
     {
-        Account.name = inputField.text;
+        Account.myname = inputField.text;
         confirm.SetActive(true);
     }
 }
