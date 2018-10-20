@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NCMB;
+using UnityEngine.SceneManagement;
 
 public class NameOK : MonoBehaviour {
 
@@ -45,6 +46,9 @@ public class NameOK : MonoBehaviour {
                 PlayerPrefs.SetString("Name", Account.myname);
                 PlayerPrefs.Save();
                 cheer.SaveAsync();
+                SceneManager.LoadScene("Self_main", LoadSceneMode.Additive);
+                SceneManager.LoadScene("Self", LoadSceneMode.Additive);
+                SceneManager.UnloadSceneAsync("Name");
 
             }
             else
