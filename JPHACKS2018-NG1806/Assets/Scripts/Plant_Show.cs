@@ -17,10 +17,17 @@ public class Plant_Show : MonoBehaviour {
         {
             grow = (Temp.suc + Temp.fall) / Temp.forfor;
         }
-        else
+        else if(Now_obj.number == 1)
         {
-           // grow = 
+            grow = (Account.suc1 + Account.fall1) / Account.forfor1;
+        }else if(Now_obj.number == 2)
+        {
+            grow = (Account.suc2 + Account.fall2) / Account.forfor2;
+        }else
+        {
+            grow = (Account.suc3 + Account.fall3) / Account.forfor3;
         }
+
         if (grow == 0)
         {
             Debug.Log("Now,0");
