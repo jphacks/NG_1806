@@ -25,6 +25,8 @@ public class Complete : MonoBehaviour {
         {
             objectlist[0]["Obj" + Temp.nowobjnum] = inp.text;
             objectlist[0]["For" + Temp.nowobjnum] = by.GetComponent<Confirm>().aa;
+            objectlist[0]["Suc" + Temp.nowobjnum] =(int) 0;
+            objectlist[0]["Fall" + Temp.nowobjnum] = (int)0;
             //objectlist[0]["wowwow"] = 33;
             //objectlist[0]._onSettingValue("Obj" + Temp.nowobjnum, inp.text);
             //objectlist[0]._onSettingValue("For"+Temp.nowobjnum, by.GetComponent<Confirm>().aa);

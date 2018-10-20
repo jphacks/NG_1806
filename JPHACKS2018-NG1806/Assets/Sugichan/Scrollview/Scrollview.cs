@@ -31,11 +31,26 @@ public class Scrollview : MonoBehaviour {
                 {
                     var item = GameObject.Instantiate(prefab) as RectTransform;
                     item.SetParent(transform, false);
-                    var text = item.GetComponentInChildren<Text>();
-                    text.text = (string)obj["Obj1"];
-                    var name = item.GetComponentInChildren<Text>();
+                    var t = item.transform.Find("Title");
+                    var title=t.GetComponent<Text>();
+                    title.text= (string)obj["Obj1"];
+                    var n = item.transform.Find("Name");
+                    var name = n.GetComponent<Text>();
                     name.text = (string)obj["Name"];
-                    var button = item.GetComponentInChildren<Button>();
+                    var button = item.transform.Find("Button").gameObject;
+                    var info = button.GetComponent<Info>();
+                    info.sendname = (string)obj["Name"];
+
+                   // button.GetComponent<Info>().sendname =(string)obj["Name"];
+                    info.obj = (string)obj["Obj1"];
+                    info.objnum = 1;
+                    info.forfor = (long)obj["For1"];
+                    
+                    
+                    info.suc =  (long)obj["Suc1"];
+                    info.fall = (long)obj["Fall1"];
+
+
                 }
 
             }
