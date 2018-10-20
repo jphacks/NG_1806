@@ -6,4 +6,5 @@ public class Temp : MonoBehaviour {
 
     public static string sendname;
     public static int sendnumber;
+    public static int nowobjnum;
 }
