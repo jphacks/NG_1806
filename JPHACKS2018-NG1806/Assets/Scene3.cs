@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Touch_ob : MonoBehaviour {
-  
-    public int num;
-    public Now_obj ob;
+public class Scene3 : MonoBehaviour {
 
     // Update is called once per frame
     void Update()
@@ -29,18 +26,10 @@ public class Touch_ob : MonoBehaviour {
                         //Rayを飛ばしてあたったオブジェクトが自分自身だったら
                         if (hit.collider.gameObject == this.gameObject)
                         {
-                            Debug.Log("pushed" + num.ToString());
-                            ob.Change(num);
-                            /*if(){
-                             * Debug.Log("goto Objinput");
-                               SceneManager.LoadScene("Objinput", LoadSceneMode.Additive);
+                            Debug.Log("goto CheerUp");
+                            SceneManager.LoadScene("CheerUp", LoadSceneMode.Additive);
                             SceneManager.UnloadSceneAsync("Self_main");
-                            SceneManager.UnloadSceneAsync("Self");
-                             Temp.nowobjnum = num;
-                             }
-                         
-                         
-                         */
+                            SceneManager.UnloadSceneAsync("Other");
                         }
                     }
                 }
