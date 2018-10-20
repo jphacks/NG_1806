@@ -10,7 +10,7 @@ public class GetResult : MonoBehaviour {
 
     void Update () {
 
-        text.text = ((PlayerPrefs.GetInt(no.now + "fail") + PlayerPrefs.GetInt(no.now + "suc")).ToString() + "days / "
+        text.text = ((PlayerPrefs.GetInt(no.now + "fall") + PlayerPrefs.GetInt(no.now + "suc")).ToString() + "days / "
             + PlayerPrefs.GetInt(no.now + "for").ToString() + "days");
 	}
 	
