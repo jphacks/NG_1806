@@ -11,35 +11,39 @@ public class Touch_ob : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (0 < Input.touchCount)
+        if (Temp.S_desu == true)
         {
-            // タッチされている指の数だけ処理
-            for (int i = 0; i < Input.touchCount; i++)
+            if (0 < Input.touchCount)
             {
-                // タッチ情報をコピー
-                UnityEngine.Touch t = Input.GetTouch(i);
-                // タッチしたときかどうか
-                if (t.phase == TouchPhase.Began)
+                // タッチされている指の数だけ処理
+                for (int i = 0; i < Input.touchCount; i++)
                 {
-                    //タッチした位置からRayを飛ばす
-                    Ray ray = Camera.main.ScreenPointToRay(t.position);
-                    RaycastHit hit = new RaycastHit();
-                    if (Physics.Raycast(ray, out hit))
+                    // タッチ情報をコピー
+                    UnityEngine.Touch t = Input.GetTouch(i);
+                    // タッチしたときかどうか
+                    if (t.phase == TouchPhase.Began)
                     {
-                        //Rayを飛ばしてあたったオブジェクトが自分自身だったら
-                        if (hit.collider.gameObject == this.gameObject)
+                        //タッチした位置からRayを飛ばす
+                        Ray ray = Camera.main.ScreenPointToRay(t.position);
+                        RaycastHit hit = new RaycastHit();
+                        if (Physics.Raycast(ray, out hit))
                         {
-                            Debug.Log("pushed" + num.ToString());
-                            ob.Change(num);
-                            /*if(){
-                               SceneManager.LoadScene("CheerUp", LoadSceneMode.Additive);
-                            SceneManager.UnloadSceneAsync("Self_main");
-                            SceneManager.UnloadSceneAsync("Self");
-                             Temp.nowobjnum = num;
-                             }
-                         
-                         
-                         */
+                            //Rayを飛ばしてあたったオブジェクトが自分自身だったら
+                            if (hit.collider.gameObject == this.gameObject)
+                            {
+                                Debug.Log("pushed" + num.ToString());
+                                ob.Change(num);
+                                /*if(){
+                                 * Debug.Log("goto Objinput");
+                                   SceneManager.LoadScene("Objinput", LoadSceneMode.Additive);
+                                SceneManager.UnloadSceneAsync("Self_main");
+                                SceneManager.UnloadSceneAsync("Self");
+                                 Temp.nowobjnum = num;
+                                 }
+
+
+                             */
+                            }
                         }
                     }
                 }

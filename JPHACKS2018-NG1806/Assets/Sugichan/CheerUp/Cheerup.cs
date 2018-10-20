@@ -29,14 +29,14 @@ public class Cheerup : MonoBehaviour {
         message["Number"] = Temp.sendnumber;
         message.SaveAsync();
         completed.SetActive(true);
-
+        StartCoroutine("Back");
     }
 
-    public IEnumerator back()
+    public IEnumerator Back()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Self_main", LoadSceneMode.Additive);
-        SceneManager.LoadScene("Self", LoadSceneMode.Additive);
+        Debug.Log("goto ScrollView");
+        SceneManager.LoadScene("ScrollView", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("CheerUp");
     }
 }
