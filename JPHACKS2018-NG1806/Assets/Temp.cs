@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Temp : MonoBehaviour {
 
-    public static string sendname=;
+    public static string sendname;
     public static int sendnumber;
 }
