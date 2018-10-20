@@ -15,7 +15,7 @@ public class Plant_Show : MonoBehaviour {
     void Update () {
         if (Temp.S_desu == false)
         {
-            grow = (Temp.suc + Temp.fall) / Temp.forfor;
+            grow = (Temp.look_suc + Temp.look_fall) / Temp.look_forfor;
         }
         else if(Now_obj.number == 1)
         {
