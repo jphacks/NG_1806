@@ -13,19 +13,32 @@ public class Plant_Show : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        
         if (Temp.S_desu == false)
-        {
-            grow = (Temp.look_suc + Temp.look_fall) / Temp.look_forfor;
+        {if (Temp.look_forfor != 0)
+            {
+                grow = (Temp.look_suc + Temp.look_fall) / Temp.look_forfor;
+            }
+            else grow = 0;
         }
         else if(Now_obj.number == 1)
-        {
-            grow = (Account.suc1 + Account.fall1) / Account.forfor1;
+        {if (Account.forfor1 != 0)
+            {
+                grow = (Account.suc1 + Account.fall1) / Account.forfor1;
+            }
+            else grow = 0;
         }else if(Now_obj.number == 2)
-        {
-            grow = (Account.suc2 + Account.fall2) / Account.forfor2;
+        {if (Account.forfor2 != 0)
+            {
+                grow = (Account.suc2 + Account.fall2) / Account.forfor2;
+            }
+            else grow = 0;
         }else
-        {
-            grow = (Account.suc3 + Account.fall3) / Account.forfor3;
+        {if (Account.forfor3 != 0)
+            {
+                grow = (Account.suc3 + Account.fall3) / Account.forfor3;
+            }
+            else grow = 0;
         }
 
         if (grow == 0)
