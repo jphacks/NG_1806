@@ -17,12 +17,20 @@ public class objinput : MonoBehaviour {
 	}
 
     public InputField inp;
+    public InputField bytime;
     public GameObject con;
     public Text notinput;
     public void OK()
     {
-        
+        if (inp.text.Length ==0 || bytime.text.Length == 0)
+        {
+            notinput.enabled = true;
+        }
+        else
+        {
+
         con.SetActive(true);
+        }
 
     }
 }
