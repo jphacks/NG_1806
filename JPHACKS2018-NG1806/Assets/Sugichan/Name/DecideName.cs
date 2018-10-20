@@ -15,11 +15,13 @@ public class DecideName : MonoBehaviour {
 		
 	}
 
+    public GameObject confirm;
     public void SaveName()
     {
 
         PlayerPrefs.SetString("Name", GetComponent<InputField>().text);
         PlayerPrefs.Save();
         print(PlayerPrefs.GetString("Name",""));
+        confirm.SetActive(true);
     }
 }
