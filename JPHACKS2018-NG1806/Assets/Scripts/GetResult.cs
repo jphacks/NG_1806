@@ -11,7 +11,7 @@ public class GetResult : MonoBehaviour {
     void Update () {
         if(Temp.S_desu == false)
         {
-            text.text = (Temp.fall + Temp.suc).ToString() + "days / " + Temp.forfor.ToString() + "days";
+            text.text = (Temp.look_fall + Temp.look_suc).ToString() + "days / " + Temp.look_forfor.ToString() + "days";
         }
         else if(Now_obj.number == 1)
         {
