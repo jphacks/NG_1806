@@ -38,9 +38,9 @@ public class NameOK : MonoBehaviour {
                 cheer["For1"]= 0;
                 cheer["For2"]= 0;
                 cheer["For3"]= 0;
-                cheer["Water"] = 0;
-                cheer["Water"] = 0;
-                cheer["Water"] = 0;
+                cheer["Water1"] = 0;
+                cheer["Water2"] = 0;
+                cheer["Water3"] = 0;
 
                 PlayerPrefs.SetString("Name", Account.myname);
                 PlayerPrefs.Save();

@@ -51,7 +51,8 @@ public class Scrollview : MonoBehaviour {
                     
                      info.suc =  (long)obj["Suc1"];
                      info.fall = (long)obj["Fall1"];
-                    info.water = (long)obj["Water"];
+                    print(obj["Water1"].GetType());
+                    info.water = (long)obj["Water1"];
                     
 
 
