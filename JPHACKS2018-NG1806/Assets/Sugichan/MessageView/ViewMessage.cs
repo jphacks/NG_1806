@@ -18,10 +18,13 @@ public class ViewMessage : MonoBehaviour {
             foreach(NCMBObject message in objectlist)
             {
                 var item = GameObject.Instantiate(prefab);
-                item.SetParent(transform, false);
                 var text = item.GetComponentInChildren<Text>();
                 string m = (string)message["Messages"];
-                item.GetComponent<RectTransform>().sizeDelta = new Vector2(600, 200 + m.Length * 10);
+                Vector2 v = new Vector2(600, 200 + m.Length * 10);
+                item.GetComponent<RectTransform>().sizeDelta = v;
+                item.transform.Find("Image"). GetComponent<RectTransform>().sizeDelta = v;
+                item.transform.Find("Text").GetComponent<RectTransform>().sizeDelta = v;
+                item.SetParent(transform, false);
                 text.text = m;
                
             }
