@@ -7,7 +7,7 @@ public class Temp : MonoBehaviour {
 
 
     public static string sendname;
-    public static int sendnumber;
+    public static long sendnumber;
     public static long nowobjnum;
     public static string look_name;
     public static string look_obj;
