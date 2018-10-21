@@ -11,8 +11,10 @@ public class Touch_ob : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+     
         if (Temp.S_desu == true)
         {
+            Debug.Log("S_desu = " + Temp.S_desu.ToString());
             if (0 < Input.touchCount)
             {
                 // タッチされている指の数だけ処理
