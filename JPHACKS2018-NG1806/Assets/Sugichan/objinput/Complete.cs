@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using NCMB;
+using UnityEngine.SceneManagement;
 
 public class Complete : MonoBehaviour {
 
@@ -31,7 +32,10 @@ public class Complete : MonoBehaviour {
             //objectlist[0]._onSettingValue("Obj" + Temp.nowobjnum, inp.text);
             //objectlist[0]._onSettingValue("For"+Temp.nowobjnum, by.GetComponent<Confirm>().aa);
             objectlist[0].SaveAsync();
-            
+
+            SceneManager.LoadScene("Self_main",LoadSceneMode.Additive);
+            SceneManager.LoadScene("main", LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync("Objinput");
             
         }
         );

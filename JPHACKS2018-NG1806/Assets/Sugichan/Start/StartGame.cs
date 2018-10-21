@@ -24,7 +24,10 @@ public class StartGame : MonoBehaviour {
         }
         else
         {
-
+            Temp.S_desu = true;
+            SceneManager.LoadScene("Self_main", LoadSceneMode.Additive);
+            SceneManager.LoadScene("Self", LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync("Start");
         }
     }
 }
