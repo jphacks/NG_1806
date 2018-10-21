@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -250,7 +250,7 @@ TextMesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 267622367}
-  m_Text: "\u5B8C\u4E86"
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.7
   m_LineSpacing: 1
@@ -260,7 +260,7 @@ TextMesh:
   m_FontSize: 60
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 8a8200c6dafdb174a83e1f0a52ad6136, type: 3}
+  m_Font: {fileID: 12800000, guid: 3d3fc53e886857249833b9918dedcfb3, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -279,7 +279,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 8a8200c6dafdb174a83e1f0a52ad6136, type: 3}
+  - {fileID: 2100000, guid: 3d3fc53e886857249833b9918dedcfb3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -423,7 +423,7 @@ TextMesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1103045009}
-  m_Text: "\u304C\u3093\u3070\u308C\uFF01\n1234567890123456789012\n\uFF11\uFF12\uFF13\uFF14\uFF15\uFF16\uFF17\uFF18\uFF19\uFF10\uFF11"
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.12
   m_LineSpacing: 1
@@ -433,7 +433,7 @@ TextMesh:
   m_FontSize: 150
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: c333ad452e05a2f4798cd814940d24ef, type: 3}
+  m_Font: {fileID: 12800000, guid: 3d3fc53e886857249833b9918dedcfb3, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -452,7 +452,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c333ad452e05a2f4798cd814940d24ef, type: 3}
+  - {fileID: 2100000, guid: 3d3fc53e886857249833b9918dedcfb3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -607,7 +607,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: db585f080c7094542a1dac45d6085b14, type: 2}
+  - {fileID: 2100000, guid: de4b988c65337304693e317d39cf7fde, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
