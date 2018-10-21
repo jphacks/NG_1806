@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class ViewMessage : MonoBehaviour {
 
     NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject>("Messages");
-    string m;
     public Text text;
+    public RectTransform prefab;
 	// Use this for initialization
 	void Start () {
         query.WhereEqualTo("Byname", PlayerPrefs.GetString("Name", ""));
@@ -17,9 +17,15 @@ public class ViewMessage : MonoBehaviour {
         {
             foreach(NCMBObject message in objectlist)
             {
-                m += message["Messages"] + "\n";
+                var item = GameObject.Instantiate(prefab);
+                item.SetParent(transform, false);
+                var text = item.GetComponentInChildren<Text>();
+                string m = (string)message["Messages"];
+                item.GetComponent<RectTransform>().sizeDelta = new Vector2(600, 200 + m.Length * 10);
+                text.text = m;
+               
             }
-            text.text = m;
+
         }
         );
 	}
