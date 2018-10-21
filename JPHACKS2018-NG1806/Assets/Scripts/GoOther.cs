@@ -37,5 +37,12 @@ public class GoOther : MonoBehaviour {
             }
         }
     }
+
+    public void Onpush()
+    {
+        SceneManager.LoadScene("ScrollView", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Self");
+        SceneManager.UnloadSceneAsync("Self_main");
+    }
 }
 

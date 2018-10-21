@@ -35,5 +35,11 @@ public class Gohome : MonoBehaviour {
             }
         }
     }
+    public void Onpush(){
+        Temp.S_desu = true;
+        SceneManager.LoadScene("Self",LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Other");
+    }
+
 }
 
