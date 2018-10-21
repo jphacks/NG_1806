@@ -46,6 +46,7 @@ public class NameOK : MonoBehaviour {
                 PlayerPrefs.SetString("Name", Account.myname);
                 PlayerPrefs.Save();
                 cheer.SaveAsync();
+                Temp.S_desu = true;
                 SceneManager.LoadScene("Self_main", LoadSceneMode.Additive);
                 SceneManager.LoadScene("Self", LoadSceneMode.Additive);
                 SceneManager.UnloadSceneAsync("Name");
