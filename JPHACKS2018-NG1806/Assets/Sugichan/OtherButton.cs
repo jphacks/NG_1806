@@ -21,6 +21,6 @@ public class OtherButton : MonoBehaviour {
         SceneManager.UnloadSceneAsync("Self_main");
         SceneManager.UnloadSceneAsync("Other");
         Temp.sendname = Temp.look_name;
-        Temp.sendnumber = Temp.look_ach;
+        Temp.sendnumber = Temp.nowobjnum;
     }
 }
