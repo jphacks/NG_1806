@@ -2,17 +2,11 @@ function sendBottun(replyToken, lineId) {
 
 
 
-  var DataClass = NCMB_KEY.DataStore("Users");
-  var resultsU = DataClass
+  var DataClass = NCMB_KEY.DataStore("Cheer");
+  var resultsC = DataClass
       .equalTo("line_id", lineId)
       .fetchAll();
-  var userName =   resultsU[0].get("user_name");
 
-  var DataClass = NCMB_KEY.DataStore("Cheer");
-
-  var resultsC = DataClass
-      .equalTo("Name", userName)
-      .fetchAll();
   var actions = [];
   Logger.log(resultsC[0].get("Obj1") != null)
   if (resultsC[0].get("Obj1") != null){
@@ -71,7 +65,7 @@ function sendBottun(replyToken, lineId) {
 
 
 function water(replyToken, lineId, task){
-  var DataClass = NCMB_KEY.DataStore("Users");
+  var DataClass = NCMB_KEY.DataStore("Cheer");
   var resultsU = DataClass
       .equalTo("line_id", lineId)
       .fetchAll();

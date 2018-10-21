@@ -27,12 +27,12 @@ function sendData(userName, lineId) {
 
 
 function chkUser(userName, lineId) {
-  var DataClass = NCMB_KEY.DataStore("Users");
+  var DataClass = NCMB_KEY.DataStore("Cheer");
   var results = DataClass
     .fetchAll();
   var userNames = [];
   for (var i = 0; i < results.length; i++) {
-    if (results[i].get("user_name") == userName) {
+    if (results[i].get("Name") == userName) {
       if (results[i].get("line_id") == lineId) {
         return 2;//登録済み
       }else {
