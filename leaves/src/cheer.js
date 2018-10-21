@@ -2,7 +2,7 @@
 
 //定期実行
 function cheer() {
-  var DataClass = NCMB_KEY.DataStore("Users");
+  var DataClass = NCMB_KEY.DataStore("Cheer");
   var resultsU = DataClass
     .fetchAll();
   Logger.log(resultsU.length)
