@@ -7,7 +7,7 @@ public class Scean : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        SceneManager.LoadScene("Name", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Start", LoadSceneMode.Additive);
         
 	}
 	
