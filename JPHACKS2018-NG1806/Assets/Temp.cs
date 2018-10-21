@@ -17,4 +17,5 @@ public class Temp : MonoBehaviour {
     public static long look_forfor;
     public static bool S_desu;
     public static long look_water;
+    public static int number;
 }

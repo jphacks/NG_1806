@@ -20,6 +20,7 @@ public class GoOther : MonoBehaviour {
                 {
                     //タッチした位置からRayを飛ばす
                     Ray ray = Camera.main.ScreenPointToRay(t.position);
+                    Debug.DrawRay(ray.origin, ray.direction);
                     RaycastHit hit = new RaycastHit();
                     if (Physics.Raycast(ray, out hit))
                     {

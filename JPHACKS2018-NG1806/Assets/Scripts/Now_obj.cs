@@ -19,7 +19,7 @@ public class Now_obj : MonoBehaviour {
     public void Change(int n)
     {
         now = "C" + n.ToString();
-        number = n;
+        Now_obj.number = n;
     }
 
 }

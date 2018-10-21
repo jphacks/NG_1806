@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Plant_Show : MonoBehaviour {
 
-    public Now_obj num;
     private float grow;
     public GameObject p1;
     public GameObject p2;
@@ -21,13 +20,13 @@ public class Plant_Show : MonoBehaviour {
             }
             else grow = 0;
         }
-        else if(Now_obj.number == 1)
+        else if(Temp.number == 1)
         {if (Account.forfor1 != 0)
             {
                 grow = (Account.suc1 + Account.fall1) / Account.forfor1;
             }
             else grow = 0;
-        }else if(Now_obj.number == 2)
+        }else if(Temp.number == 2)
         {if (Account.forfor2 != 0)
             {
                 grow = (Account.suc2 + Account.fall2) / Account.forfor2;
