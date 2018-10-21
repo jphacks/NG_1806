@@ -22,7 +22,7 @@ public class Scrollview : MonoBehaviour {
 	void Start () {
 
         NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject>("Cheer");
-        query.WhereNotEqualTo("Suc1", 0);
+        query.WhereNotEqualTo("Obj1", "");
         query.OrderByAscending("Suc1");
         query.FindAsync((List<NCMBObject> objectlist, NCMBException e) =>
             {
