@@ -1,4 +1,4 @@
-# サンプル（プロダクト名）
+# はっぱ(葉っぱ x 発破)
 
 [![Product Name](image.png)](https://www.youtube.com/watch?v=G5rULR53uMk)
 
