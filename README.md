@@ -38,7 +38,7 @@ Google Apps Script のトリガー機能を利用し、毎日自動で応援メ�
 
 #### フレームワーク・ライブラリ・モジュール
 * Unity
-* Nifty Cloud
+* NiftyCloudMobileBackend
 * Google Apps Script
 
 #### デバイス
